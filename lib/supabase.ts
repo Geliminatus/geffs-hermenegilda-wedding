@@ -1,19 +1,5 @@
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
-
-// Lazy singleton — only instantiated when submitRSVP is called (client-side).
-// This prevents the build from crashing when env vars are not yet set.
-let _client: SupabaseClient | null = null;
-
-function getClient(): SupabaseClient {
-  if (_client) return _client;
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
-  if (!url.startsWith("http")) {
-    throw new Error("NEXT_PUBLIC_SUPABASE_URL is not configured. Add it to your environment variables.");
-  }
-  _client = createClient(url, key);
-  return _client;
-}
+// RSVPs are stored in a private GitHub Gist via /api/rsvp.
+// No external database account required.
 
 export type RSVPInsert = {
   name: string;
@@ -23,7 +9,15 @@ export type RSVPInsert = {
   message?: string;
 };
 
-export async function submitRSVP(data: RSVPInsert) {
-  const { error } = await getClient().from("rsvps").insert([data]);
-  if (error) throw error;
+export async function submitRSVP(data: RSVPInsert): Promise<void> {
+  const res = await fetch("/api/rsvp", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    throw new Error(body.error ?? `Request failed (${res.status})`);
+  }
 }
