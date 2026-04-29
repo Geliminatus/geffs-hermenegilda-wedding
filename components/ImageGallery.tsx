@@ -6,18 +6,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { id: 1, src: "https://picsum.photos/seed/wedding-1/800/600", alt: "Couple on the beach" },
-  { id: 2, src: "https://picsum.photos/seed/zanzibar-coast/600/800", alt: "Zanzibar coastline" },
-  { id: 3, src: "https://picsum.photos/seed/tropical-flowers/800/600", alt: "Tropical flowers" },
-  { id: 4, src: "https://picsum.photos/seed/sunset-ocean/600/800", alt: "Sunset over the ocean" },
-  { id: 5, src: "https://picsum.photos/seed/couple-portrait/800/600", alt: "Portrait" },
-  { id: 6, src: "https://picsum.photos/seed/beach-walk/600/800", alt: "Beach walk" },
-  { id: 7, src: "https://picsum.photos/seed/tropical-garden/800/600", alt: "Tropical garden" },
-  { id: 8, src: "https://picsum.photos/seed/ocean-breeze/800/600", alt: "Ocean breeze" },
-  { id: 9, src: "https://picsum.photos/seed/stone-town/600/800", alt: "Stone Town" },
-  { id: 10, src: "https://picsum.photos/seed/romance-beach/800/600", alt: "Romantic beach" },
-  { id: 11, src: "https://picsum.photos/seed/palm-trees/800/600", alt: "Palm trees" },
-  { id: 12, src: "https://picsum.photos/seed/zanzibar-night/600/800", alt: "Zanzibar night" },
+  { id: 1, src: "/gallery/couple-hands.jpg", alt: "Holding hands", w: 600, h: 800 },
+  { id: 2, src: "/gallery/couple-boat.jpg", alt: "Geff & Hermenegilda on the water", w: 600, h: 750 },
+  { id: 3, src: "/gallery/family.jpg", alt: "Our little family", w: 800, h: 450 },
+  { id: 4, src: "https://picsum.photos/seed/nungwi-zanzibar/800/533", alt: "Nungwi beach, Zanzibar", w: 800, h: 533 },
+  { id: 5, src: "https://picsum.photos/seed/zanzibar-sunset-gold/533/800", alt: "Zanzibar sunset", w: 533, h: 800 },
+  { id: 6, src: "https://picsum.photos/seed/indian-ocean-zan/800/533", alt: "Indian Ocean waters", w: 800, h: 533 },
+  { id: 7, src: "https://picsum.photos/seed/stone-town-alleys/533/800", alt: "Stone Town, Zanzibar", w: 533, h: 800 },
+  { id: 8, src: "https://picsum.photos/seed/zanzibar-coral-reef/800/533", alt: "Zanzibar coral reef", w: 800, h: 533 },
+  { id: 9, src: "https://picsum.photos/seed/nungwi-palms/533/800", alt: "Palm trees at Nungwi", w: 533, h: 800 },
+  { id: 10, src: "https://picsum.photos/seed/zanzibar-beach-clear/800/533", alt: "Crystal clear waters", w: 800, h: 533 },
+  { id: 11, src: "https://picsum.photos/seed/zanzibar-dhow/800/533", alt: "Traditional dhow at sea", w: 800, h: 533 },
+  { id: 12, src: "https://picsum.photos/seed/zanzibar-stars/533/800", alt: "Zanzibar night sky", w: 533, h: 800 },
 ];
 
 export default function ImageGallery() {
@@ -42,8 +42,8 @@ export default function ImageGallery() {
             <Image
               src={img.src}
               alt={img.alt}
-              width={800}
-              height={600}
+              width={img.w}
+              height={img.h}
               className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
             />
@@ -82,8 +82,8 @@ export default function ImageGallery() {
               <Image
                 src={images[lb].src}
                 alt={images[lb].alt}
-                width={800}
-                height={600}
+                width={images[lb].w}
+                height={images[lb].h}
                 className="w-full h-full object-contain rounded-xl"
               />
               <p className="absolute bottom-3 inset-x-0 text-center text-[10px] text-zinc-600 uppercase tracking-widest">
