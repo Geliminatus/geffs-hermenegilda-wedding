@@ -44,7 +44,7 @@ export default function ImageGallery() {
               alt={img.alt}
               width={img.w}
               height={img.h}
-              className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${img.src.startsWith("/gallery/") ? "grayscale" : ""}`}
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
@@ -84,7 +84,7 @@ export default function ImageGallery() {
                 alt={images[lb].alt}
                 width={images[lb].w}
                 height={images[lb].h}
-                className="w-full h-full object-contain rounded-xl"
+                className={`w-full h-full object-contain rounded-xl ${images[lb].src.startsWith("/gallery/") ? "grayscale" : ""}`}
               />
               <p className="absolute bottom-3 inset-x-0 text-center text-[10px] text-zinc-600 uppercase tracking-widest">
                 {lb + 1} / {images.length}
