@@ -6,11 +6,11 @@ import { useLanguage } from "@/context/LanguageContext";
 import { t, tr } from "@/lib/i18n";
 
 const imgSeeds = [
-  "https://picsum.photos/seed/story-meet/700/500",
-  "https://picsum.photos/seed/story-date/700/500",
-  "https://picsum.photos/seed/story-journey/700/500",
-  "https://picsum.photos/seed/story-proposal/700/500",
-  "https://picsum.photos/seed/story-wedding/700/500",
+  { src: "/gallery/couple-boat.jpg", personal: true },
+  { src: "/gallery/couple-hands.jpg", personal: true },
+  { src: "/gallery/family.jpg", personal: true },
+  { src: "https://picsum.photos/seed/zanzibar-proposal/700/500", personal: false },
+  { src: "https://picsum.photos/seed/zanzibar-wedding-forever/700/500", personal: false },
 ];
 
 export default function StoryPage() {
@@ -39,10 +39,10 @@ export default function StoryPage() {
                 {/* Image */}
                 <div className={`relative rounded-2xl overflow-hidden aspect-[4/3] ${idx % 2 !== 0 ? "lg:[direction:ltr]" : ""}`}>
                   <Image
-                    src={imgSeeds[idx]}
+                    src={imgSeeds[idx].src}
                     alt={tr(item.title, lang)}
                     fill
-                    className="object-cover"
+                    className={`object-cover ${imgSeeds[idx].personal ? "grayscale" : ""}`}
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
