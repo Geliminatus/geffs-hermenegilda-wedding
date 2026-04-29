@@ -35,7 +35,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.1, ease }}
           className="font-playfair text-[clamp(3rem,10vw,7rem)] font-bold leading-[1.05] text-white"
         >
-          Geffs <span className="text-gold italic">&</span> Hermenegilda
+          Geff <span className="text-gold italic">&</span> Hermenegilda
         </motion.h1>
 
         {/* Subtitle */}

@@ -1,4 +1,4 @@
-# Geffs & Hermenegilda Wedding Website
+# Geff & Hermenegilda Wedding Website
 
 A modern, elegant wedding website built with Next.js 14, Tailwind CSS, Framer Motion, and Supabase.
 

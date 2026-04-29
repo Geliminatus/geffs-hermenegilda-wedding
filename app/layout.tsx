@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Geffs & Hermenegilda — Wedding 2026",
+  title: "Geff & Hermenegilda — Wedding 2026",
   description: "Join us to celebrate our wedding on August 8, 2026 in Zanzibar, Tanzania.",
-  openGraph: { title: "Geffs & Hermenegilda Wedding", description: "August 8, 2026 · Zanzibar, Tanzania" },
+  openGraph: { title: "Geff & Hermenegilda Wedding", description: "August 8, 2026 · Zanzibar, Tanzania" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

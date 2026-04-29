@@ -12,7 +12,7 @@ export const t = {
   },
   hero: {
     eyebrow: { en: "August 8, 2026 · Zanzibar, Tanzania", sw: "Agosti 8, 2026 · Zanzibar, Tanzania" },
-    names: { en: "Geffs & Hermenegilda", sw: "Geffs & Hermenegilda" },
+    names: { en: "Geff & Hermenegilda", sw: "Geff & Hermenegilda" },
     subtitle: { en: "We're getting married.", sw: "Tunaoa." },
     forever: { en: "Forever starts here.", sw: "Milele inaanza hapa." },
     cta_rsvp: { en: "RSVP", sw: "Jibu" },
@@ -34,8 +34,8 @@ export const t = {
     card_date_value: { en: "August 8, 2026", sw: "Agosti 8, 2026" },
     card_date_sub: { en: "Saturday", sw: "Jumamosi" },
     card_venue_label: { en: "The Venue", sw: "Mahali" },
-    card_venue_value: { en: "Zanzibar", sw: "Zanzibar" },
-    card_venue_sub: { en: "Tanzania, East Africa", sw: "Tanzania, Afrika Mashariki" },
+    card_venue_value: { en: "Nungwi", sw: "Nungwi" },
+    card_venue_sub: { en: "Zanzibar, Tanzania", sw: "Zanzibar, Tanzania" },
     card_event_label: { en: "The Event", sw: "Tukio" },
     card_event_value: { en: "Wedding Ceremony", sw: "Sherehe ya Ndoa" },
     card_event_sub: { en: "Ceremony & Reception", sw: "Sherehe na Karamu" },
@@ -52,24 +52,24 @@ export const t = {
     eyebrow: { en: "How it began", sw: "Jinsi ilivyoanza" },
     title: { en: "Our Story", sw: "Hadithi Yetu" },
     quote: { en: "“I found my forever in you.”", sw: "“Nimepata milele yangu ndani yako.”" },
-    quote_attr: { en: "— Geffs", sw: "— Geffs" },
+    quote_attr: { en: "— Geff", sw: "— Geff" },
     timeline: [
       {
         year: { en: "2019", sw: "2019" },
         title: { en: "The Beginning", sw: "Mwanzo" },
         sub: { en: "How it all started", sw: "Jinsi ilivyoanza" },
         body: {
-          en: "It was a warm afternoon when Geffs first noticed Hermenegilda across the room. A shared laugh, an exchanged glance — and something quietly extraordinary began.",
-          sw: "Ilikuwa jioni ya joto Geffs alipomwona Hermenegilda kwa mara ya kwanza. Kicheko kilichoshirikiwa, macho yaliyopeana — na kitu cha ajabu kilianza kimya kimya.",
+          en: "It was a warm afternoon when Geff first noticed Hermenegilda across the room. A shared laugh, an exchanged glance — and something quietly extraordinary began.",
+          sw: "Ilikuwa jioni ya joto Geff alipomwona Hermenegilda kwa mara ya kwanza. Kicheko kilichoshirikiwa, macho yaliyopeana — na kitu cha ajabu kilianza kimya kimya.",
         },
       },
       {
-        year: { en: "2020", sw: "2020" },
+        year: { en: "2021", sw: "2021" },
         title: { en: "First Date", sw: "Tarehe ya Kwanza" },
         sub: { en: "A walk to remember", sw: "Kutembea kukumbukwa" },
         body: {
-          en: "Under the soft glow of a Dar es Salaam evening, they shared their first real conversation over dinner — talking until the restaurant lights dimmed.",
-          sw: "Chini ya mwanga laini wa jioni ya Dar es Salaam, walishiriki mazungumzo yao ya kwanza ya kweli wakila chakula cha jioni.",
+          en: "In 2021, under the warm lights of Dar es Salaam, they shared their first real date over dinner — talking for hours, long after the restaurant had quieted.",
+          sw: "Mwaka 2021, chini ya taa za joto za Dar es Salaam, walishiriki kwenye tarehe yao ya kwanza ya kweli wakila chakula cha jioni — wakizungumza kwa masaa, baada ya mgahawa kutulia.",
         },
       },
       {
@@ -86,8 +86,8 @@ export const t = {
         title: { en: "The Proposal", sw: "Ombi la Ndoa" },
         sub: { en: "Yes, forever", sw: "Ndiyo, milele" },
         body: {
-          en: "On a breathtaking evening overlooking the Indian Ocean, Geffs got down on one knee. Hermenegilda said yes — and the ocean seemed to cheer with the waves.",
-          sw: "Katika jioni nzuri ikiangalia Bahari Hindi, Geffs alipiga magoti. Hermenegilda alisema ndiyo — na bahari ilionekana kushangilia na mawimbi.",
+          en: "At their home in Kibaha, in a quiet and heartfelt moment, Geff got down on one knee. Hermenegilda said yes — and a new chapter of their life together began.",
+          sw: "Nyumbani kwao Kibaha, katika wakati wa utulivu na wa moyoni, Geff alipiga magoti. Hermenegilda alisema ndiyo — na sura mpya ya maisha yao pamoja ilianza.",
         },
       },
       {
@@ -95,8 +95,8 @@ export const t = {
         title: { en: "Forever Begins", sw: "Milele Inaanza" },
         sub: { en: "August 8 · Zanzibar", sw: "Agosti 8 · Zanzibar" },
         body: {
-          en: "Surrounded by the people they love most, on an island of breathtaking beauty, Geffs and Hermenegilda will make their vows — a promise for every sunrise yet to come.",
-          sw: "Wakizungukwa na watu wanaowapenda zaidi, kwenye kisiwa cha uzuri, Geffs na Hermenegilda watatoa nadhiri zao — ahadi kwa kila machweo ya jua yanayokuja.",
+          en: "Surrounded by the people they love most, on an island of breathtaking beauty, Geff and Hermenegilda will make their vows — a promise for every sunrise yet to come.",
+          sw: "Wakizungukwa na watu wanaowapenda zaidi, kwenye kisiwa cha uzuri, Geff na Hermenegilda watatoa nadhiri zao — ahadi kwa kila machweo ya jua yanayokuja.",
         },
       },
     ],
@@ -105,11 +105,11 @@ export const t = {
     eyebrow: { en: "Everything you need to know", sw: "Kila kitu unachohitaji kujua" },
     title: { en: "Event Details", sw: "Maelezo ya Tukio" },
     ceremony_title: { en: "Ceremony", sw: "Sherehe ya Ndoa" },
-    ceremony_venue: { en: "Stone Town Beachfront, Zanzibar", sw: "Pwani ya Stone Town, Zanzibar" },
+    ceremony_venue: { en: "Nungwi, Zanzibar", sw: "Nungwi, Zanzibar" },
     ceremony_time: { en: "15:00 — Ceremony begins", sw: "Saa 9:00 mchana — Sherehe inaanza" },
     ceremony_note: { en: "Please arrive by 14:00.", sw: "Tafadhali fika ifikapo saa 8:00." },
     reception_title: { en: "Reception", sw: "Karamu" },
-    reception_venue: { en: "Beachfront Terrace, Zanzibar", sw: "Terasi ya Pwani, Zanzibar" },
+    reception_venue: { en: "Nungwi, Zanzibar", sw: "Nungwi, Zanzibar" },
     reception_time: { en: "17:00 — Reception begins", sw: "Saa 11:00 jioni — Karamu inaanza" },
     reception_note: { en: "Dinner and dancing to follow. After party at 22:00.", sw: "Chakula cha jioni na dansi. Sherehe zaidi saa 4:00 usiku." },
     dress_title: { en: "Dress Code", sw: "Mavazi" },
@@ -174,8 +174,8 @@ export const t = {
         time: "15:00",
         title: { en: "Ceremony", sw: "Sherehe ya Ndoa" },
         body: {
-          en: "The moment we have all been waiting for. Geffs and Hermenegilda exchange their vows by the water's edge.",
-          sw: "Wakati tunaousubiri wote. Geffs na Hermenegilda watabadilishana nadhiri zao kando ya maji.",
+          en: "The moment we have all been waiting for. Geff and Hermenegilda exchange their vows by the water's edge.",
+          sw: "Wakati tunaousubiri wote. Geff na Hermenegilda watabadilishana nadhiri zao kando ya maji.",
         },
         featured: true,
       },
@@ -265,7 +265,7 @@ export const t = {
       en: "Every contribution, big or small, helps us create a day we will cherish forever. Thank you from the bottom of our hearts.",
       sw: "Kila mchango, mkubwa au mdogo, unatusaidia kuunda siku tutakayoipenda milele. Asante kutoka moyoni mwa mioyo yetu.",
     },
-    signature: { en: "— Geffs & Hermenegilda", sw: "— Geffs na Hermenegilda" },
+    signature: { en: "— Geff & Hermenegilda", sw: "— Geff na Hermenegilda" },
   },
   gallery: {
     eyebrow: { en: "Memories in the making", sw: "Kumbukumbu zinazotengenezwa" },
@@ -281,7 +281,7 @@ export const t = {
   },
   footer: {
     tagline: { en: "August 8, 2026 · Zanzibar, Tanzania", sw: "Agosti 8, 2026 · Zanzibar, Tanzania" },
-    made_with: { en: "Made with love for Geffs & Hermenegilda", sw: "Imetengenezwa kwa upendo kwa Geffs na Hermenegilda" },
+    made_with: { en: "Made with love for Geff & Hermenegilda", sw: "Imetengenezwa kwa upendo kwa Geff na Hermenegilda" },
   },
 };
 
