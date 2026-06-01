@@ -5,19 +5,19 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
+// Real photographs of Nungwi, Zanzibar — where Geff & Hermenegilda will marry.
+// Sourced from Wikimedia Commons (CC BY / CC BY-SA). See public/gallery/CREDITS.md.
 const images = [
-  { id: 1, src: "/gallery/couple-hands.jpg", alt: "Holding hands", w: 600, h: 800 },
-  { id: 2, src: "/gallery/couple-boat.jpg", alt: "Geff & Hermenegilda on the water", w: 600, h: 750 },
-  { id: 3, src: "/gallery/family.jpg", alt: "Our little family", w: 800, h: 450 },
-  { id: 4, src: "https://picsum.photos/seed/nungwi-zanzibar/800/533", alt: "Nungwi beach, Zanzibar", w: 800, h: 533 },
-  { id: 5, src: "https://picsum.photos/seed/zanzibar-sunset-gold/533/800", alt: "Zanzibar sunset", w: 533, h: 800 },
-  { id: 6, src: "https://picsum.photos/seed/indian-ocean-zan/800/533", alt: "Indian Ocean waters", w: 800, h: 533 },
-  { id: 7, src: "https://picsum.photos/seed/stone-town-alleys/533/800", alt: "Stone Town, Zanzibar", w: 533, h: 800 },
-  { id: 8, src: "https://picsum.photos/seed/zanzibar-coral-reef/800/533", alt: "Zanzibar coral reef", w: 800, h: 533 },
-  { id: 9, src: "https://picsum.photos/seed/nungwi-palms/533/800", alt: "Palm trees at Nungwi", w: 533, h: 800 },
-  { id: 10, src: "https://picsum.photos/seed/zanzibar-beach-clear/800/533", alt: "Crystal clear waters", w: 800, h: 533 },
-  { id: 11, src: "https://picsum.photos/seed/zanzibar-dhow/800/533", alt: "Traditional dhow at sea", w: 800, h: 533 },
-  { id: 12, src: "https://picsum.photos/seed/zanzibar-stars/533/800", alt: "Zanzibar night sky", w: 533, h: 800 },
+  { id: 1, src: "/gallery/nungwi-pano.jpg", alt: "Nungwi panorama, Zanzibar", w: 1400, h: 930 },
+  { id: 2, src: "/gallery/nungwi-beach-1.jpg", alt: "Nungwi Beach, Zanzibar", w: 960, h: 573 },
+  { id: 3, src: "/gallery/nungwi-shore-1.jpg", alt: "Turquoise water at Nungwi", w: 1400, h: 933 },
+  { id: 4, src: "/gallery/nungwi-paradise.jpg", alt: "Paradise at Nungwi", w: 1400, h: 1050 },
+  { id: 5, src: "/gallery/nungwi-beach-3.jpg", alt: "Nungwi Beach shoreline", w: 1400, h: 1054 },
+  { id: 6, src: "/gallery/nungwi-white-sand.jpg", alt: "White sandy beach, Nungwi", w: 1400, h: 1050 },
+  { id: 7, src: "/gallery/nungwi-shore-2.jpg", alt: "Nungwi coast, Zanzibar", w: 1400, h: 905 },
+  { id: 8, src: "/gallery/nungwi-strand.jpg", alt: "On the beach at Nungwi", w: 1280, h: 960 },
+  { id: 9, src: "/gallery/nungwi-beach-2.jpg", alt: "White sands of Nungwi", w: 776, h: 456 },
+  { id: 10, src: "/gallery/nungwi-turtles.jpg", alt: "Sea life at Nungwi", w: 1400, h: 1867 },
 ];
 
 export default function ImageGallery() {
@@ -44,7 +44,7 @@ export default function ImageGallery() {
               alt={img.alt}
               width={img.w}
               height={img.h}
-              className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${img.src.startsWith("/gallery/") ? "grayscale" : ""}`}
+              className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
@@ -84,7 +84,7 @@ export default function ImageGallery() {
                 alt={images[lb].alt}
                 width={images[lb].w}
                 height={images[lb].h}
-                className={`w-full h-full object-contain rounded-xl ${images[lb].src.startsWith("/gallery/") ? "grayscale" : ""}`}
+                className="w-full h-full object-contain rounded-xl"
               />
               <p className="absolute bottom-3 inset-x-0 text-center text-[10px] text-zinc-600 uppercase tracking-widest">
                 {lb + 1} / {images.length}

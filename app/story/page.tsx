@@ -5,12 +5,13 @@ import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { t, tr } from "@/lib/i18n";
 
+// Nungwi, Zanzibar — the place where the story leads.
 const imgSeeds = [
-  { src: "/gallery/couple-boat.jpg", personal: true },
-  { src: "/gallery/couple-hands.jpg", personal: true },
-  { src: "/gallery/family.jpg", personal: true },
-  { src: "https://picsum.photos/seed/zanzibar-proposal/700/500", personal: false },
-  { src: "https://picsum.photos/seed/zanzibar-wedding-forever/700/500", personal: false },
+  { src: "/gallery/nungwi-paradise.jpg" },
+  { src: "/gallery/nungwi-beach-3.jpg" },
+  { src: "/gallery/nungwi-white-sand.jpg" },
+  { src: "/gallery/nungwi-shore-1.jpg" },
+  { src: "/gallery/nungwi-strand.jpg" },
 ];
 
 export default function StoryPage() {
@@ -42,7 +43,7 @@ export default function StoryPage() {
                     src={imgSeeds[idx].src}
                     alt={tr(item.title, lang)}
                     fill
-                    className={`object-cover ${imgSeeds[idx].personal ? "grayscale" : ""}`}
+                    className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
